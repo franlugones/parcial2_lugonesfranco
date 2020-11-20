@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+main{width: 100%;
+	 height: 1100px;
+	 background-color: #d2dae2;
+	 margin-left: auto;
+	 margin-right: auto; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 600px 600px 300px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Header Header"
+    "Izquierda Izquierda"
+    "Derecha Derecha"
+    "Bajo Bajo";}
+
+.Header { grid-area: Header;
+		  width: 100%;
+	      height: 150px;
+	      background-color: #220D29;
+	      position: static; }
+
+#titular { width: 100%;
+		   height: 100px;
+		   padding-top: 25px; }
+
+	     h1 {color: #ADC7B5;
+		     font-family: 'Neucha', cursive;
+		     font-size: 70px;
+		     text-align: center;
+		     text-decoration: none;}
+
+.Izquierda { grid-area: Izquierda;
+			 width: 100%;
+		     height: 600px;
+		     background-color: #ADC7B5;
+		     float: left;
+		     position: static; }
+
+	.logo {width: 100%;
+		   padding-top: 15px;
+		   padding-left: 25%;}
+
+.Derecha { grid-area: Derecha;
+		   width: 100%;
+	 	   height: 600px;
+		   background-color: #220D29;
+		   float: right;
+		   position: static; }
+
+	#form input, textarea { width:100%;
+							font-family: 'Neucha', cursive;
+							background-color: #321B3F;
+							color: #ADC7B5;
+							font-size: 1em; }
+
+	#form { width: 100%; }
+
+	#cont_texto { background: #ADC7B5;
+			 	  font-family: 'Amatic SC', cursive;
+				  font-size:1.3em;
+				  width: 400px;
+				  color: #220D29;
+				  padding: 2%;
+				  margin:0 auto; }
+
+	#cont_texto h1 { font-family: 'Amatic SC', cursive;
+					 font-size: 1.6em;
+					 color: #220D29; }
+
+.Bajo { grid-area: Bajo;
+		width: 100%;
+	    height: 300px;
+	    background-color: #ADC7B5;
+	    clear: both;
+	    position: static; }
+
+	h2 {padding-top: 80px;
+		color:  #220D29;
+		font-family: 'Amatic SC', cursive;;
+		font-size: 40px;
+		text-align: center;
+		text-decoration: none;}
+
+
+.footer{ width: 100%;
+	     height: 50px;
+	     background-color: #321B3F;
+	     position: fixed;
+	     right: 0px;
+	     bottom: 0px; }
+
+	h3 {padding-top: 10px;
+	    color:  #ADC7B5;
+		font-family: 'Amatic SC', cursive;;
+		font-size: 21px;
+		text-align: center;
+		text-decoration: none;}

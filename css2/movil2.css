@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+main{width: 100%;
+	 height: 1350px;
+	 background-color: #d2dae2;
+	 margin-left: auto;
+	 margin-right: auto; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 550px 550px 100px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Header"
+    "Izq"
+    "Der"
+    "Footer";
+}
+
+.Header { grid-area: Header;
+		  width: 100%;
+	      height: 150px;
+	      background-color: #220D29;
+	      position: static; }
+
+	      h1 {color: #ADC7B5;
+		     font-family: 'Neucha', cursive;
+		     font-size: 20px;
+		     text-align: center;
+		     text-decoration: none;
+		     padding-top: 70px;}
+
+.Izq{ grid-area: Izq;
+			 width: 100%;
+		     height: 550px;
+		     background-color: #ADC7B5;
+		     float: left;
+		     position: static; }
+
+.Der{ grid-area: Der;
+		   width: 100%;
+	 	   height: 550px;
+		   background-color: #220D29;
+		   float: right;
+		   position: static; }
+
+	.rslides { position: relative;
+			   list-style: none;
+			   overflow: hidden;
+			   width: 100%;
+			   padding: 0;
+			   margin: 0; }
+
+	.rslides li { -webkit-backface-visibility: hidden;
+				  position: absolute;
+				  display: none;
+				  width: 100%;
+				  left: 0;
+				  top: 0; }
+
+	.rslides li:first-child { position: relative;
+							  display: block;
+						 	  float: left; }
+
+	.rslides img { display: block;
+				   height: auto;
+				   float: left;
+				   width: 100%;
+				   border: 0; }
+
+.Footer { grid-area: Footer;
+		width: 100%;
+	    height: 100px;
+	    background-color: #ADC7B5;
+	    clear: both;
+	    position: static; }	
+
+	      h2 {color: #220D29;
+		     font-family: 'Amatic SC', cursive;
+		     font-size: 15px;
+		     text-align: center;
+		     text-decoration: none;
+		     padding-top: 40px;}
